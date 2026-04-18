@@ -20,8 +20,8 @@ def save_tasks(tasks):
     用到：open()写文件、json.dump()序列化
     """
     with open(TODO_FILE,"w",encoding="utf-8") as f:
-        #json.dump():把PYthon列表/字典转成JSON字符串，写入文件
-        #ensure——asci=Falss防止中文乱码，indent=2让文件格式更容易读
+        #json.dump():把Python列表/字典转成JSON字符串，写入文件
+        #ensure——asci=False防止中文乱码，indent=2让文件格式更容易读
         json.dump(tasks,f,ensure_ascii=False,indent=2)
 def show_tasks(task):
     """显示所有任务"""
